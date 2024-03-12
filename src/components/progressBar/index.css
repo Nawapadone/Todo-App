@@ -1,0 +1,32 @@
+.card-progress {
+    background-color: #E07C7C;
+    color: #fff;
+    border-radius: 20px;
+    height: 123px;
+    margin: 10px 10px 30px 10px;
+}
+
+.text-header {
+    font-size: 28px;
+    padding: 15px 10px 10px 15px;
+}
+
+.text-title {
+    font-size: 16px;
+    padding: 15px 10px 10px 15px;
+    color: #EBB9B8;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #3B3B3B;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #fff;
+    transition: width 0.5s ease;
+}

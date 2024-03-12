@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2E2E2E;
+  background-color: #F5F5F5;
+  ;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  font-size: 16px;
+}
+
+input[type=checkbox] {
+  width: 22px;
+  height: 22px;
+  border: 2px #585292 solid;
+  accent-color: #585292;
+}
+
+
+.container {
+  margin: 0 auto;
+  position: relative
+}
+
+@media screen and (min-width:1088px) {
+  .container {
+    max-width: 960px;
+    width: 960px
+  }
+
+  .container.is-fluid {
+    margin-left: 64px;
+    margin-right: 64px;
+    max-width: none;
+    width: auto
+  }
+}
+
+@media screen and (max-width:1279px) {
+  .container.is-widescreen {
+    max-width: 1152px;
+    width: auto
+  }
+}
+
+@media screen and (max-width:1471px) {
+  .container.is-fullhd {
+    max-width: 1344px;
+    width: auto
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .container {
+    max-width: 1152px;
+    width: 1152px
+  }
+}
+
+@media screen and (min-width:1472px) {
+  .container {
+    max-width: 1344px;
+    width: 1344px
+  }
+}
