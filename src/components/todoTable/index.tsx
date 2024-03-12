@@ -46,7 +46,7 @@ const TodoTable = () => {
         }
     };
 
-    const handleFilter = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    const handleFilter = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         const key = event.currentTarget.value;
         switch (key) {
             case 'All':
@@ -54,12 +54,14 @@ const TodoTable = () => {
                 setUseFilter(key)
                 break;
             case 'Done':
-                const done = useTodos.filter((todo) => todo.completed === true) as unknown as Todo
+                await getTodos()
+                const done = await useTodos.filter((todo) => todo.completed === true) as unknown as Todo
                 dispatch(setTodo(done))
                 setUseFilter(key)
                 break;
             case 'Undone':
-                const unDone = useTodos.filter((todo) => todo.completed === false) as unknown as Todo
+                await getTodos()
+                const unDone = await useTodos.filter((todo) => todo.completed === false) as unknown as Todo
                 dispatch(setTodo(unDone))
                 setUseFilter(key)
                 break;

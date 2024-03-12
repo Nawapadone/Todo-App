@@ -55,8 +55,6 @@ test('should Check an action with CHECK_TODO type', () => {
 
   const nextState = todoReducer(initialState, action);
 
-  console.log(nextState)
-
   expect(nextState).toEqual({ todos: [{ id: '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed', title: 'hello world', completed: true }] });
 });
 
